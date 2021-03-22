@@ -1,0 +1,89 @@
+h1 {
+    color: $font-color;
+}
+
+h2 {
+    font-size: $h2-font-size;
+    font-weight: $h2-font-weight;
+    color: $font-color;
+}
+
+.main-ft__image {
+    width: 20rem;
+}
+
+.main-nd {
+    button {
+        margin-top: 2rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .main-display {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 2rem;
+
+        .main-nd {
+            margin-top: 6rem;
+
+            button {
+                margin-top: 2rem;
+            }
+
+        }
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .main-display {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 2rem;
+    }
+    
+    .main-ft {
+        height: 36rem;
+        h1 {
+            color: $font-color;
+            font-size: $h1-font-size;
+        }
+    
+        .main-ft__h1 {
+            position: relative;
+            left: 14rem;
+            z-index: 2;
+            top: 1.5rem;
+        }
+    
+        .main-ft__image {
+            width: 35rem;
+            position: relative;
+            left: 11rem;
+        }
+    
+        .main-ft__rectangle {
+            height: 17rem;
+            width: 31rem;
+            background-color: #ffff;
+            z-index: -2;
+            position: relative;
+            bottom: 13rem;
+            left: 5rem;
+        }
+    }
+    
+    .main-nd {
+        grid-column: 2/3;
+        grid-row: 1/2;
+        margin-top: 12rem !important;
+        h2 {
+            font-size: $h2-font-size;
+            font-weight: $h2-font-weight;
+            color: $font-color;
+        } 
+    }
+}

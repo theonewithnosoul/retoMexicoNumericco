@@ -1,0 +1,480 @@
+body {
+  font-family: 'Sarabun', sans-serif; }
+
+.main-ft__image {
+  width: 35rem; }
+
+button {
+  background-color: #f3e45d;
+  border: none;
+  color: #34332c;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px; }
+  button:hover {
+    background-color: #34332c;
+    color: #f3e45d;
+    cursor: pointer; }
+
+body {
+  background-color: lightgrey;
+  overflow-x: hidden; }
+
+.container {
+  margin: 0 2rem 0 2rem; }
+
+body {
+  height: 100%;
+  background: linear-gradient(#737163, #a5b4b3, #fefadc); }
+
+.marquee {
+  position: relative;
+  overflow: hidden;
+  --offset: 100vw;
+  --move-initial: calc(-66% + var(--offset));
+  --move-final: calc(-139% + var(--offset)); }
+
+.marquee__inner {
+  width: fit-content;
+  display: flex;
+  position: relative;
+  transform: translate3d(var(--move-initial), 0, 0);
+  animation: marquee 5s linear infinite;
+  animation-play-state: paused; }
+
+.marquee span {
+  font-size: 24px;
+  padding: 0 2vw;
+  background-color: #f3e45d; }
+
+.marquee__inner {
+  animation-play-state: running; }
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(var(--move-initial), 0, 0); }
+  100% {
+    transform: translate3d(var(--move-final), 0, 0); } }
+
+@media only screen and (max-width: 600px) {
+  .marquee span {
+    font-size: 21px;
+    padding: 0 2vw; } }
+
+.footer__background {
+  background-color: #34332c; }
+
+.footer__address {
+  margin-left: 1rem;
+  margin-top: 1rem; }
+  .footer__address p {
+    color: #ffff; }
+
+li {
+  list-style: none; }
+
+.footer__nav a img {
+  margin-top: 2rem;
+  margin-left: 1rem; }
+
+.footer__nav .button__display {
+  display: flex;
+  justify-content: start;
+  margin-left: 1rem; }
+
+.footer__nav_display {
+  display: flex;
+  flex-wrap: wrap; }
+  .footer__nav_display li {
+    list-style: none;
+    margin: 1rem; }
+    .footer__nav_display li a {
+      text-decoration: none;
+      color: #ffff;
+      font-weight: 500;
+      font-size: 0.8rem; }
+
+.footer__reservation-button {
+  height: 3rem;
+  margin-top: 1.5rem; }
+
+@media only screen and (min-width: 1300px) {
+  .footer__background .footer__nav {
+    display: flex;
+    justify-content: space-between; }
+    .footer__background .footer__nav a {
+      margin-top: 1.5rem; }
+    .footer__background .footer__nav .footer__reservation-button {
+      height: 3rem;
+      margin-top: 1.5rem; }
+    .footer__background .footer__nav .button__display {
+      margin-top: 2rem; }
+    .footer__background .footer__nav .footer__nav_display {
+      display: flex;
+      justify-content: center;
+      margin-top: 2rem; }
+      .footer__background .footer__nav .footer__nav_display li {
+        list-style: none;
+        margin: 2rem; }
+        .footer__background .footer__nav .footer__nav_display li a {
+          text-decoration: none;
+          color: #ffff;
+          font-weight: 500;
+          font-size: 0.8rem; }
+          .footer__background .footer__nav .footer__nav_display li a:hover {
+            color: #f3e45d; }
+  li {
+    margin: 2rem; }
+  .social-media {
+    justify-content: flex-end; }
+  .footer__address {
+    margin-top: 2rem; }
+    .footer__address .address {
+      margin-top: 0.7rem; } }
+
+h1 {
+  color: #ffff; }
+
+h2 {
+  font-size: 1rem;
+  font-weight: 500;
+  color: #ffff; }
+
+.main-ft__image {
+  width: 20rem; }
+
+.main-nd button {
+  margin-top: 2rem; }
+
+@media only screen and (min-width: 600px) {
+  .main-display {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem; }
+    .main-display .main-nd {
+      margin-top: 6rem; }
+      .main-display .main-nd button {
+        margin-top: 2rem; } }
+
+@media only screen and (min-width: 1200px) {
+  .main-display {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem; }
+  .main-ft {
+    height: 36rem; }
+    .main-ft h1 {
+      color: #ffff;
+      font-size: 4rem; }
+    .main-ft .main-ft__h1 {
+      position: relative;
+      left: 14rem;
+      z-index: 2;
+      top: 1.5rem; }
+    .main-ft .main-ft__image {
+      width: 35rem;
+      position: relative;
+      left: 11rem; }
+    .main-ft .main-ft__rectangle {
+      height: 17rem;
+      width: 31rem;
+      background-color: #ffff;
+      z-index: -2;
+      position: relative;
+      bottom: 13rem;
+      left: 5rem; }
+  .main-nd {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 12rem !important; }
+    .main-nd h2 {
+      font-size: 1rem;
+      font-weight: 500;
+      color: #ffff; } }
+
+.display {
+  display: flex; }
+
+.topnav {
+  margin: 0 auto;
+  overflow: hidden; }
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px; }
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #f3e45d;
+  color: black; }
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  color: white; }
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none; }
+
+@media screen and (max-width: 1120px) {
+  .topnav a:not(:first-child) {
+    display: none; }
+  .topnav a.icon {
+    float: right;
+    display: block; } }
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1120px) {
+  .topnav.responsive {
+    position: relative; }
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0; }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left; } }
+
+@media only screen and (max-width: 1099px) {
+  .icons ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 2rem;
+    row-gap: 2rem; }
+    .icons ul li {
+      list-style: none;
+      margin: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      height: 4rem;
+      line-height: 2rem; }
+      .icons ul li .icon-8 {
+        margin-top: 0.5rem; }
+      .icons ul li .icon-3 {
+        margin: 0 auto; }
+      .icons ul li .icon-6 {
+        margin: 0 auto; } }
+
+@media only screen and (min-width: 1100px) {
+  .icons ul {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 3rem; }
+    .icons ul li {
+      list-style: none;
+      margin: 2rem;
+      display: flex;
+      flex-wrap: wrap;
+      align-content: center;
+      height: 4rem;
+      line-height: 2rem; }
+      .icons ul li .icon-8 {
+        margin-top: 0.5rem; }
+      .icons ul li .icon-3 {
+        margin: 0 auto; }
+      .icons ul li .icon-6 {
+        margin: 0 auto; }
+      .icons ul li p {
+        font-size: 13px;
+        border-bottom-color: #f3e45d;
+        border-bottom-width: 3px;
+        border-bottom-style: solid;
+        margin: 0 0 10px;
+        padding: 0 0 10px; }
+        .icons ul li p:hover {
+          background-color: #f3e45d;
+          color: #ffff;
+          cursor: pointer; } }
+
+.servicios {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; }
+  .servicios .restaurant .servicios__restaurant-img {
+    width: 20rem;
+    z-index: -2; }
+  .servicios .restaurant .servicios__restaurant-reserva {
+    position: relative;
+    bottom: 4rem;
+    left: 1rem;
+    color: #ffff; }
+  .servicios .food {
+    display: flex;
+    flex-wrap: wrap; }
+    .servicios .food .food__domicilio .servicios__mexican-food-img {
+      width: 20rem;
+      z-index: -2;
+      opacity: 0.8; }
+    .servicios .food .food__recogida .servicios__waitress-img {
+      width: 20rem;
+      z-index: -2;
+      opacity: 0.8; }
+    .servicios .food .servicios__food-text {
+      position: relative;
+      bottom: 4rem;
+      left: 1rem;
+      color: #ffff; }
+  .servicios .newsletter {
+    background-color: #d1b076;
+    z-index: 0;
+    width: 20rem;
+    height: 15rem;
+    margin-top: 2rem;
+    color: #ffff; }
+    .servicios .newsletter .apto {
+      display: none; }
+    .servicios .newsletter .newsletter__align {
+      padding: 2rem; }
+      .servicios .newsletter .newsletter__align p {
+        margin-top: 1rem; }
+
+@media only screen and (min-width: 600px) {
+  .servicios {
+    justify-content: center; }
+  .food {
+    justify-content: center; } }
+
+@media only screen and (min-width: 1100px) {
+  .servicios {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 2rem; }
+    .servicios .restaurant {
+      grid-column: 1/2; }
+      .servicios .restaurant:hover {
+        transform: scale(1.1);
+        cursor: pointer; }
+        .servicios .restaurant:hover h2 {
+          width: 12rem;
+          background-color: #f3e45d;
+          color: #ffff;
+          padding: 4px; }
+      .servicios .restaurant .servicios__restaurant-img {
+        width: 26rem;
+        margin-top: 6rem;
+        z-index: -2; }
+      .servicios .restaurant .servicios__restaurant-reserva {
+        position: relative;
+        bottom: 4rem;
+        left: 1rem;
+        color: #ffff; }
+    .servicios .food {
+      grid-column: 2/3;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center; }
+      .servicios .food .food__domicilio:hover {
+        transform: scale(1.1);
+        cursor: pointer; }
+        .servicios .food .food__domicilio:hover h2 {
+          width: 12rem;
+          background-color: #f3e45d;
+          color: #ffff;
+          width: 9rem;
+          padding: 1px; }
+      .servicios .food .food__domicilio .servicios__mexican-food-img {
+        width: 20rem;
+        z-index: -2;
+        opacity: 0.8; }
+      .servicios .food .food__recogida:hover {
+        transform: scale(1.1);
+        cursor: pointer; }
+        .servicios .food .food__recogida:hover h2 {
+          width: 12rem;
+          background-color: #f3e45d;
+          color: #ffff;
+          width: 7.5rem;
+          padding: 4px; }
+      .servicios .food .food__recogida .servicios__waitress-img {
+        width: 20rem;
+        margin-top: 2rem;
+        z-index: -2;
+        opacity: 0.8; }
+      .servicios .food .servicios__food-text {
+        position: relative;
+        bottom: 4rem;
+        left: 1rem;
+        color: #ffff; }
+    .servicios .newsletter {
+      background-color: #d1b076;
+      z-index: 0;
+      width: 26rem;
+      height: 15rem;
+      margin-top: 6rem;
+      color: #ffff; }
+      .servicios .newsletter .newsletter__align {
+        padding: 2rem; }
+        .servicios .newsletter .newsletter__align p {
+          margin-top: 1rem; }
+      .servicios .newsletter .apto {
+        display: block;
+        margin-top: 2rem;
+        margin-left: -1rem; }
+        .servicios .newsletter .apto .apto__lista {
+          display: flex; }
+          .servicios .newsletter .apto .apto__lista li {
+            display: flex; }
+            .servicios .newsletter .apto .apto__lista li p {
+              font-size: 0.7rem;
+              margin-top: 0.5rem;
+              margin-left: 0.5rem; }
+            .servicios .newsletter .apto .apto__lista li img {
+              width: 2rem; } }
+
+/* Style the search field */
+form.example input[type=text] {
+  margin-top: 1rem;
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid #34332c;
+  float: left;
+  width: 68%;
+  background: #f1f1f1; }
+
+/* Style the submit button */
+form.example button {
+  margin-top: 1rem;
+  float: left;
+  width: 32%;
+  padding: 10px;
+  color: white;
+  font-size: 17px;
+  border: 1px solid #34332c;
+  border-left: none;
+  /* Prevent double borders */
+  cursor: pointer; }
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table; }
+
+.imagenes-platos {
+  display: flex;
+  z-index: 2; }
+  .imagenes-platos img {
+    width: 25%; }
+    .imagenes-platos img:hover {
+      opacity: 0.8; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }

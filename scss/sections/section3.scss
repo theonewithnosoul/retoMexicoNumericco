@@ -1,0 +1,15 @@
+.imagenes-platos {
+    display: flex;
+    z-index: 2;
+
+
+    img {
+        width: 25%;
+        &:hover {
+           opacity: 0.8;
+        }
+    }
+
+
+
+}

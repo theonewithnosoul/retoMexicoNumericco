@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@100;300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Mexican Restaurant</title>
+</head>
+
+<body>
+    <!--header-->
+    <header class="container display">
+        <nav class="topnav" id="myTopnav">
+            <a href="#">Haz tu pedido</a>
+            <a href="#">Nuestra carta</a>
+            <a href="#">Nuestros Menús</a>
+            <a href="/" class="active"><img src="images/logoMexico.svg" alt="logoMexico"></a>
+            <a href="#">Conócenos</a>
+            <a href="#">Dónde estamos</a>
+            <a href="#">Reserva tu mesa</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <!-- <ul class="nav_display">
+                <li><a href="#"> Haz tu pedido</a></li>
+                <li><a href="#">Nuestra carta</a></li>
+                <li><a href="#">Nuestros Menús</a></li>
+                <li><a href="/"><img src="images/logoMexico.svg" alt="logoMexico"></a></li>
+                <li><a href="#">Conócenos</a></li>
+                <li><a href="#">Dónde estamos</a></li>
+                <li><a href="#">Reserva tu mesa</a></li>
+            </ul> -->
+        </nav>
+    </header>
+    <!--Main content-->
+    <main class="main-display container">
+        <div class="main-ft">
+            <h1 class="main-ft__h1">TAKE AWAY AND DELIVERY</h1>
+            <img class="main-ft__image" src="./images/burrito.svg" alt="imagenPrincipal">
+            <div class="main-ft__rectangle"></div>
+        </div>
+        <div class="main-nd">
+            <h2>
+                Nachos, tacos, burritos, hamburguesas, falafel, <br> quesadillas, burguers… te lo llevamos a casa o
+                puedes
+                pasar a recogerlo.
+            </h2>
+            <button>Haz tu pedido</button>
+        </div>
+    </main>
+    <!--Section 1-->
+    <section class="icons container">
+        <ul>
+            <li>
+                <img src="images/icon-1.svg" alt="icon1">
+                <p>Steak tartar</p>
+
+            </li>
+            <li>
+                <img src="images/icon-2.svg" alt="icon2">
+                <p>Vegetariano</p>
+
+            </li>
+            <li>
+                <img class="icon-3" src="images/icon-3.svg" alt="icon3">
+                <p>Burguer 180gr.</p>
+
+            </li>
+            <li>
+                <img src="images/icon-4.svg" alt="icon4">
+                <p>Compartir</p>
+
+            </li>
+            <li>
+                <img src="images/icon-5.svg" alt="icon5">
+                <p>Mexicano</p>
+
+            </li>
+            <li>
+                <img class="icon-6" src="images/icon-6.svg" alt="icon6">
+                <p>Burguer 250gr.</p>
+
+            </li>
+            <li>
+                <img src="images/icon-7.svg" alt="icon7">
+                <p>Ensaladas</p>
+
+            </li>
+            <li>
+                <img class="icon-8" src="images/icon-8.svg" alt="icon8">
+                <p>Mexicano</p>
+
+            </li>
+            <li>
+                <img src="images/icon-10.svg" alt="icon8">
+                <p>Postres</p>
+
+            </li>
+        </ul>
+    </section>
+    <!--Section 2 servicios destacados-->
+    <section class="servicios container">
+        <div class="restaurant">
+            <img class="servicios__restaurant-img" src="images/emptyRestaurant.svg" alt="emptyRestaurant">
+            <div class="servicios__restaurant-reserva">
+                <h2>RESERVAR MESA</h2>
+                <p>Experimenta México reservando mesa</p>
+            </div>
+
+        </div>
+
+        <div class="food">
+            <div class="food__domicilio">
+                <img class="servicios__mexican-food-img" src="images/mexicanFood.svg" alt="mexicanFood">
+                <div class="servicios__food-text">
+                    <h2>A DOMICILIO</h2>
+                    <p>Haz tu pedido y te lo llevamos a tu casa</p>
+                </div>
+            </div>
+            <div class="food__recogida">
+                <img class="servicios__waitress-img" src="images/waitress.svg" alt="waitress">
+                <div class="servicios__food-text">
+                    <h2>RECOGIDA</h2>
+                    <p>Haz tu pedido y recógelo en el restaurante</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="newsletter">
+            <div class="newsletter__align">
+                <h2>Newsletter</h2>
+                <p>Subscríbete a nuestro newsletter y recibe un 20% de descuento
+                    en tu próximo pedido
+                </p>
+                <form class="example" action="action_page.php">
+                    <input type="text" placeholder="Correo electrónico" name="search">
+                    <button type="button">Enviar</button>
+                </form>
+            </div>
+            <div class="apto">
+                <ul class="apto__lista">
+                    <li><img src="images/vegano.svg" alt="vegano">
+                        <p>Vegano</p>
+                    </li>
+                    <li><img src="images/vegetariano.svg" alt="vegetariano">
+                        <p>vegetariano</p>
+                    </li>
+                    <li><img src="images/sinGluten.svg" alt="sinGluten">
+                        <p>Sin gluten</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </section>
+    <!--Section 3 banner abierto-->
+    <div class="marquee">
+        <div class="marquee__inner" aria-hidden="true">
+            <span>ABIERTO TODOS LOS DÍAS DE LA SEMANA REALIZA TU PEDIDO ONLINE O LLAMANOS AL 976 662 345</span>
+        </div>
+    </div>
+    <!--Section 4 imágenes platos-->
+    <section class="imagenes-platos">
+        <img src="images/homeMadeBurger.svg" alt="homeMadeBurger">
+        <img src="images/mexicanTacos.svg" alt="mexicanTacos">
+        <img src="images/tacosPastor.svg" alt="tacosPastor">
+        <img src="images/cesarSalad.svg" alt="cesarSalad">
+    </section>
+    <!--footer-->
+    <footer class="footer__background">
+        <div class="footer__nav container">
+            <a href="/"><img src="images/logoMexico.svg" alt="logoMexico"></a>
+            <nav>
+                <ul class="footer__nav_display">
+                    <li><a href="#"> Haz tu pedido</a></li>
+                    <li><a href="#">Nuestra carta</a></li>
+                    <li><a href="#">Nuestros Menús</a></li>
+                    <li><a href="#">Conócenos</a></li>
+                    <li><a href="#">Dónde estamos</a></li>
+                    <li><a href="#">Reserva tu mesa</a></li>
+                </ul>
+            </nav>
+            <div class="button__display">
+                <button class="footer__reservation-button">Reservar mesa</button>
+            </div>
+        </div>
+        <div class="footer__nav container">
+            <div class="footer__address">
+                <p>912 321 090</p>
+                <p class="address">Calle Coso 51 Zaragoza</p>
+            </div>
+            <ul class="footer__nav_display rights">
+                <li><a href="#">México todos los derechos reservados</a></li>
+                <li><a href="#">Política de privacidad </a></li>
+                <li><a href="#">Términos de desarrollo</a></li>
+                <li><a href="#">Diseño y desarrollo Numéricco</a></li>
+            </ul>
+            <ul class="footer__nav_display social-media">
+                <li><span><img src="images/instagram.svg" alt="instagram"></span>
+                </li>
+                <li><span><img src="images/facebook.svg" alt="facebook"></span>
+                </li>
+            </ul>
+        </div>
+
+    </footer>
+    <script>
+        /* Toggle between adding and removing the "responsive" class to topnav when the user clicks on the icon */
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</body>
+
+</html>

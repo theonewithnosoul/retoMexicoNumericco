@@ -1,0 +1,299 @@
+.servicios {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+
+    .restaurant {
+
+        .servicios__restaurant-img {
+            width: 20rem;
+            z-index: -2;
+        }
+
+        .servicios__restaurant-reserva {
+            position: relative;
+            bottom: 4rem;
+            left: 1rem;
+            color: $font-color;
+
+
+        }
+    }
+
+    .food {
+        display: flex;
+        flex-wrap: wrap;
+
+
+        .food__domicilio {
+
+            .servicios__mexican-food-img {
+                width: 20rem;
+                z-index: -2;
+                opacity: 0.8;
+
+            }
+
+        }
+
+        .food__recogida {
+
+            .servicios__waitress-img {
+                width: 20rem;
+                z-index: -2;
+                opacity: 0.8;
+            }
+
+
+        }
+
+
+
+        .servicios__food-text {
+            position: relative;
+            bottom: 4rem;
+            left: 1rem;
+            color: $font-color;
+
+        }
+
+
+    }
+
+    .newsletter {
+        background-color: #d1b076;
+        z-index: 0;
+        width: 20rem;
+        height: 15rem;
+        margin-top: 2rem;
+        color: $font-color;
+
+        .apto {
+            display: none;
+        }
+
+        .newsletter__align {
+            padding: 2rem;
+
+            p {
+                margin-top: 1rem;
+
+            }
+        }
+
+
+
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    .servicios {
+        justify-content: center;
+    }
+
+    .food {
+        justify-content: center;
+    }
+}
+
+
+@media only screen and (min-width: 1100px) {
+    .servicios {
+        margin-top: 5rem;
+        margin-bottom: 5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        gap: 2rem;
+
+        .restaurant {
+            grid-column: 1/2;
+
+            &:hover {
+                transform: scale(1.1);
+                cursor: pointer;
+
+                h2 {
+                    width: 12rem;
+                    background-color: $button-color;
+                    color: $font-color;
+                    padding: 4px;
+                }
+
+
+            }
+
+            .servicios__restaurant-img {
+                width: 26rem;
+                margin-top: 6rem;
+                z-index: -2;
+            }
+
+            .servicios__restaurant-reserva {
+                position: relative;
+                bottom: 4rem;
+                left: 1rem;
+                color: $font-color;
+
+
+            }
+        }
+
+        .food {
+            grid-column: 2/3;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .food__domicilio {
+                &:hover {
+                    transform: scale(1.1);
+                    cursor: pointer;
+
+                    h2 {
+                        width: 12rem;
+                        background-color: $button-color;
+                        color: $font-color;
+                        width: 9rem;
+                        padding: 1px;
+                    }
+
+
+                }
+
+                .servicios__mexican-food-img {
+                    width: 20rem;
+                    z-index: -2;
+                    opacity: 0.8;
+
+                }
+
+            }
+
+            .food__recogida {
+                &:hover {
+                    transform: scale(1.1);
+                    cursor: pointer;
+
+                    h2 {
+                        width: 12rem;
+                        background-color: $button-color;
+                        color: $font-color;
+                        width: 7.5rem;
+                        padding: 4px;
+                    }
+
+
+                }
+
+                .servicios__waitress-img {
+                    width: 20rem;
+                    margin-top: 2rem;
+                    z-index: -2;
+                    opacity: 0.8;
+                }
+
+
+            }
+
+
+
+            .servicios__food-text {
+                position: relative;
+                bottom: 4rem;
+                left: 1rem;
+                color: $font-color;
+
+            }
+
+
+        }
+
+        .newsletter {
+            background-color: #d1b076;
+            z-index: 0;
+            width: 26rem;
+            height: 15rem;
+            margin-top: 6rem;
+            color: $font-color;
+
+            .newsletter__align {
+                padding: 2rem;
+
+                p {
+                    margin-top: 1rem;
+
+                }
+            }
+
+
+
+            .apto {
+                display: block;
+                margin-top: 2rem;
+                margin-left: -1rem;
+
+                .apto__lista {
+                    display: flex;
+
+                    li {
+                        display: flex;
+
+                        p {
+                            font-size: 0.7rem;
+                            margin-top: 0.5rem;
+                            margin-left: 0.5rem;
+
+                        }
+
+                        img {
+                            width: 2rem;
+                        }
+                    }
+                }
+            }
+
+
+        }
+
+    }
+}
+
+
+/* Style the search field */
+form.example input[type=text] {
+    margin-top: 1rem;
+    padding: 10px;
+    font-size: 17px;
+    border: 1px solid $font-button-color;
+    float: left;
+    width: 68%;
+    background: #f1f1f1;
+}
+
+/* Style the submit button */
+form.example button {
+    margin-top: 1rem;
+    float: left;
+    width: 32%;
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+    border: 1px solid $font-button-color;
+    border-left: none;
+    /* Prevent double borders */
+    cursor: pointer;
+}
+
+
+
+/* Clear floats */
+form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+}
